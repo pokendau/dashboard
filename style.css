@@ -313,13 +313,14 @@ input:focus {
     display: flex;
     gap: 1rem;
     font-size: 0.8rem;
+    align-items: center;
 }
 
 .card__profile img {
-    width: 15%;
+    width: clamp(1rem, 3vw, 3rem);
     flex-shrink: 0;
     border-radius: 64px;
-    height: auto;
+    height: clamp(1rem, 3vw, 3rem);
 }
 
 .card__profile__txt p:last-child {
