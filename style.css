@@ -58,6 +58,9 @@ body {
     color: white;
     padding: max(5%, 1rem) max(1rem, 10%);
     box-shadow: 1px 0 10px 1px #4d445785;
+    display: flex;
+    flex-direction: column;
+    gap: min(2rem, 50%);
 }
 
 .logo {
