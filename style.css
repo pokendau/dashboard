@@ -219,3 +219,111 @@ input:focus {
    --_btn-color: var(--red-400);
    --_hover-color: var(--red-300)
 }
+
+
+#dashboard__body {
+    display: grid;
+    grid-template-rows: 0.5fr 5fr;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    color: white;
+    background-color: var(--gray-800);
+    margin: 1rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+#dashboard__body p:first-child {
+    grid-column: 1 / span 2 ;
+
+}
+
+.body__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.body__col1, .body__col2, .body__col3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--gray-900);
+    padding: var(--_padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--_gap);
+    position: relative;
+    border-radius: 16px;
+}
+
+.card__content p {
+    font-size: var(--_default-txt);
+}
+
+.card__content p:first-child {
+    font-size: var(--_header-txt);
+    font-weight: 600;
+}
+
+.card--main {
+    --_default-txt: 1rem;
+    --_header-txt: 1.2rem;
+    --_gap: 2rem;
+    --_padding: 3rem;
+}
+
+.card--scndry {
+    --_default-txt: 0.6rem;
+    --_header-txt: 0.8rem;
+    --_gap: 0.8rem;
+    --_padding: 2rem;
+}
+
+.card--trending {
+    --_default-txt: 1rem;
+    --_padding: 2rem;
+    --_gap: 2rem;
+}
+
+.card__icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.card__icons img {
+    width: 7%;
+}
+
+.side_line::before {
+    content: "";
+    background-color: var(--yellow-400);
+    width: 1rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.card__profile {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+.card__profile img {
+    width: 20%;
+    border-radius: 64px;
+    height: auto;
+}
+
+.card__profile__txt p:last-child {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blue-300);
+    
+}
