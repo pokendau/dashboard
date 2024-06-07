@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6, p {
     --green-400: #dafdcc;
     --gray-900: #130b1c;
     --gray-800: #1c1523;
+    --yellow-400: #facc15;
     font-size: 18px;
 }
 
@@ -56,6 +57,7 @@ body {
     background-color: var(--gray-800);
     color: white;
     padding: max(5%, 1rem) max(1rem, 10%);
+    box-shadow: 1px 0 10px 1px #4d445785;
 }
 
 .logo {
@@ -67,10 +69,12 @@ body {
     background: linear-gradient(-90deg, rgba(250,204,21,1) 0%, rgba(187,42,221,1) 100%); 
     color: transparent;
     background-clip: text;
+    text-shadow: 0 0 64px var(--purple-300);
 }
 
 .logo img {
     width: min(200px, 25%);
+    filter: drop-shadow(0px 0px 48px var(--yellow-400));
 }
 
 ul {
@@ -80,6 +84,29 @@ ul {
     padding: 0;
     font-weight: 600;
     font-size: max(1.2rem, 100%);
+    gap: 1rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    color: white;
+    transition: color 150ms;
+}
+
+li:nth-child(6) {
+    margin-top: 2rem;
+}
+
+li:hover {
+    color: var(--blue-400);
+    transition: color 150ms;
+}
+
+li img {
+    width: 8%;
 }
 
 .dashboard__header {
